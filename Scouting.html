@@ -46,7 +46,7 @@
   <button id=>
 </div>
 <div id="cap">
-  <h2>Capacity</h2>
+  <h2>Fouls</h2>
   <button id="mechanum" onclick="mechanum()">Foul</button>
   <h1 id="foul" value=0>0</h1>
   <button id="pfoul" onclick="pascale()">+</button>
@@ -58,7 +58,7 @@
   <button id="hopper" onclick="toggle(this)">Yellow Card</button>
   <h1 id="ycard" value=0>0</h1>
   <button id="pycard" onclick="pascale()">+</button>
-  <button id="mcard" onclick="mascale()">-</button>
+  <button id="mycard" onclick="mascale()">-</button>
   <button id="macrogear" onclick="toggle(this)">Red Card</button>
   <h1 id="rcard" value=0>0</h1>
   <button id="prcard" onclick="pascale()">+</button>
@@ -119,7 +119,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 12%; top: 20%;
-  border: 1px solid black;
+  border: 0px;
 }
 #high-ball-score{
   width: 20%;
@@ -144,6 +144,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 40%; top: 20%;
+  border: 0px;
 }
    
 #pscale {
@@ -170,6 +171,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 68%; top: 20%;
+  border: 0px;
 }
 #pvault {
   position: inherit; left: 81%; top: 59%;
@@ -193,6 +195,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit;; left: 10%; top: 15%;
+  border: 0px;
 }
 #auto-switch-score {
   border: 2px solid black;
@@ -217,6 +220,7 @@ border: 1px solid black;
   height: 20%;
   font-size: 1em;
   position: inherit;; right: 10%; top: 15%;
+  border: 0px;
 }
 #auto-scale-score {
   border: 2px solid black;
@@ -282,6 +286,7 @@ border: 1px solid black;
   height: 24%;
   font-size: 1em;
   position: inherit; left: 4%; top: 30%;
+  border: 0px;
 }
 
 #foul {
@@ -345,7 +350,7 @@ height: 11%;
 
 #mycard {
 border: 1px solid black;
-position: inherit; bottom: 20%;
+position: inherit; bottom: 20%; right: 40%;
 width: 6%;
 height: 11%;
 }
@@ -360,14 +365,14 @@ padding-top: 20px;
 
 #prcard {
 border: 1px solid black;
-position: inherit; bottom: 20%;
+position: inherit; bottom: 20%; right: 5.5%;
 width: 6%;
 height: 11%;
 }
 
 #mrcard {
 border: 1px solid black;
-position: inherit; bottom: 20%;
+position: inherit; bottom: 20%; right: 16%;
 width: 6%;
 height: 11%;
 }
@@ -399,12 +404,14 @@ width: 20%;
   height: 24%;
   font-size: 1em;
   position: inherit; left: 28%; top: 30%;
+  border: 0px;
 }
 #hopper{
   width: 20%;
   height: 24%;
   font-size: 1em;
   position: inherit; left: 52%; top: 30%;
+  border: 0px;
 }
 
 #macrogear{
@@ -412,6 +419,7 @@ width: 20%;
   height: 24%;
   font-size: 1em;
   position: inherit; left: 76%; top: 30%;
+  border: 0px;
 }
 .selected{
   border: 2px solid black;
@@ -457,21 +465,25 @@ label {
 button {
   /* basics */
   color: #0;
-  background-color: #c9c9c9;
+  background-color: #ffffff;
   /* rounded corners */
     -webkit-border-radius: 6px;
           border-radius: 6px; 
     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
   font-weight: bold;
+
 }
+
 button:hover, button:active, button:focus {
-  background-color: #9c9c9c;
+  background-color: #c9c9c9;
 }
+
 .box {
   /* basics */
   background-color: #444;
-  color: #C4BE92;
+  color: #ffffff;
     text-align: center;
+
   /* rounded corners */
     -webkit-border-radius: 12px;
     border-radius: 12px; 
@@ -481,7 +493,6 @@ button:hover, button:active, button:focus {
   margin: 0 auto; 
     -webkit-box-shadow: 0px 0px 12px 0px #000;
     box-shadow: 0px 0px 12px 0px #000;
-  
 }
 </style>
 <script>
@@ -518,7 +529,7 @@ function mascale(){
 function toggle(){
 }
 function eliasisdumb(){
-  setTimeout(function(){alert("elias is dumb"); }, 0);
+  setTimeout(function(){alert("elias is stinky"); }, 0);
 }
 </script>
  </html>

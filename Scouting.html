@@ -7,7 +7,8 @@
   </head>
   <body>
 <div id="ball">
-  <h2>Power Cubes</h2>
+  <h2>Scored Cubes</h2>
+
   <button id="switch" onclick="smallball()">Switch</button>
   <h1 id="high-ball-score" vaulue=0>0</h1>
   <button id="pswitch" onclick="pswitch()">+</button>
@@ -22,6 +23,24 @@
   <h1 id="low-ball-score" value=0>0</h1>
   <button id="pvault" onclick="pvault()">+</button>
   <button id="mvault" onclick="mvault()">-</button>
+
+  <h2 id="pickedup">Picked Up Cubes</h2>
+
+  <button id="ground" onclick="ground()">Ground</button>
+  <h1 id="groundcube" vaulue=0>0</h1>
+  <button id="pground" onclick="pground()">+</button>
+  <button id="mground" onclick="mground()">-</button>
+
+  <button id="portal" onclick="portal()">Portal</button>
+  <h1 id="portalcube" vaulue=0>0</h1>
+  <button id="pportal" onclick="pportal()">+</button>
+  <button id="mportal" onclick="mportal()">-</button>
+
+  <button id="pile" onclick="pile()">Pile</button>
+  <h1 id="pilecube" vaulue=0>0</h1>
+  <button id="ppile" onclick="ppile()">+</button>
+  <button id="mpile" onclick="mpile()">-</button>
+
 </div>
 <div id="auto">
   <h2>Auto</h2>
@@ -86,6 +105,10 @@ h1 {
 h2 {
   padding: 0%;
   margin: 1%;
+}
+#pickedup{
+position: inherit; bottom: 43%; left: 41%;
+
 }
 #text{
 border: 2px solid black;
@@ -154,7 +177,15 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit; left: 40%; top: 10%;
   border: 0px;
 }
-   
+
+#mid-ball-score{
+  width: 20%;
+  height: 20%;
+  position: inherit; left: 40%; top: 25%;
+  border: 0px solid black;
+  padding-top: 10px;  
+}
+
 #pscale {
   position: inherit; left: 53%; top: 34%;
   width: 6%;
@@ -166,13 +197,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 11%;
 
 }
-#mid-ball-score{
-  width: 20%;
-  height: 20%;
-  position: inherit; left: 40%; top: 25%;
-  border: 0px solid black;
-  padding-top: 10px;
-}
+
 #vault{
   width: 20%;
   height: 20%;
@@ -180,23 +205,103 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit; left: 68%; top: 10%;
   border: 0px;
 }
-#pvault {
-  position: inherit; left: 81%; top: 34%;
-  width: 6%;
-  height: 11%;
-}
-#mvault {
-  position: inherit; left: 69%; top: 34%;
-  width: 6%;
-  height: 11%;
-}
+
 #low-ball-score{
   width: 20%;
   height: 20%;
   position: inherit; left: 68%; top: 25%;
   border: 0px solid black;
+  padding-top: 10px
+}
+
+#pvault {
+  position: inherit; left: 81%; top: 34%;
+  width: 6%;
+  height: 11%;
+}
+
+#mvault {
+  position: inherit; left: 69%; top: 34%;
+  width: 6%;
+  height: 11%;
+}
+
+#ground{
+  width: 20%;
+  height: 20%;
+  font-size: 1em;
+  position: inherit; left: 12%; bottom: 30%;
+  border: 0px;
+}
+#groundcube{
+  width: 20%;
+  height: 20%;
+  position: inherit; left: 12%; bottom: 7%;
+  border: 0px solid black;
   padding-top: 10px;
 }
+#pground{
+  position: inherit; left: 25%; bottom: 16%;
+  width: 6%;
+  height: 11%;
+}
+#mground{
+  position: inherit; left: 13%; bottom: 16%;
+  width: 6%;
+  height: 11%;
+}
+
+#portal{
+  width: 20%;
+  height: 20%;
+  font-size: 1em;
+  position: inherit; left: 40%; bottom: 30%;
+  border: 0px;
+  background-color: Transparent;
+}
+#portalcube{
+  width: 20%;
+  height: 20%;
+  position: inherit; left: 40%; bottom: 7%;
+  border: 0px solid black;
+  padding-top: 10px;
+}
+#pportal{
+  position: inherit; left: 53%; bottom: 16%;
+  width: 6%;
+  height: 11%;
+}
+#mportal{
+  position: inherit; left: 41%; bottom: 16%;
+  width: 6%;
+  height: 11%;
+}
+
+#pile{
+  width: 20%;
+  height: 20%;
+  font-size: 1em;
+  position: inherit; left: 68%; bottom: 30%;
+  border: 0px;
+}
+#pilecube{
+  width: 20%;
+  height: 20%;
+  position: inherit; left: 68%; bottom: 7%;
+  border: 0px solid black;
+  padding-top: 10px;
+}
+#ppile{
+  position: inherit; left: 81%; bottom: 16%;
+  width: 6%;
+  height: 11%;
+}
+#mpile{
+  position: inherit; left: 69%; bottom: 16%;
+  width: 6%;
+  height: 11%;
+}
+
 #autoswitch {
   width: 25%;
   height: 20%;

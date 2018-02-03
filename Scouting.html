@@ -54,23 +54,23 @@
   <h2>Fouls</h2>
   <button id="mechanum" onclick="mechanum()">Foul</button>
   <h1 id="foul" value=0>0</h1>
-  <button id="pfoul" onclick="pascale()">+</button>
-  <button id="mfoul" onclick="mascale()">-</button>
+  <button id="pfoul" onclick="pfoul()">+</button>
+  <button id="mfoul" onclick="mfoul()">-</button>
 
   <button id="groundball" onclick="toggle(this)">Tech Foul</button>
   <h1 id="tfoul" value=0>0</h1>
-  <button id="ptfoul" onclick="pascale()">+</button>
-  <button id="mtfoul" onclick="mascale()">-</button>
+  <button id="ptfoul" onclick="ptfoul()">+</button>
+  <button id="mtfoul" onclick="mtfoul()">-</button>
 
   <button id="hopper" onclick="toggle(this)">Yellow Card</button>
   <h1 id="ycard" value=0>0</h1>
-  <button id="pycard" onclick="pascale()">+</button>
-  <button id="mycard" onclick="mascale()">-</button>
+  <button id="pycard" onclick="pycard()">+</button>
+  <button id="mycard" onclick="mycard()">-</button>
 
   <button id="macrogear" onclick="toggle(this)">Red Card</button>
   <h1 id="rcard" value=0>0</h1>
-  <button id="prcard" onclick="pascale()">+</button>
-  <button id="mrcard" onclick="mascale()">-</button>
+  <button id="prcard" onclick="prcard()">+</button>
+  <button id="mrcard" onclick="mrcard()">-</button>
 </div>
 <button id="lock" onclick="eliasisdumb()">QR</button>
 <div id="text">
@@ -547,6 +547,30 @@ function pascale(){
 }
 function mascale(){
  document.getElementById('auto-scale-score').innerHTML = Number(document.getElementById('auto-scale-score').innerHTML)-1;
+}
+function pfoul(){
+ document.getElementById('foul').innerHTML = Number(document.getElementById('foul').innerHTML)+1;
+}
+function mfoul(){
+ document.getElementById('foul').innerHTML = Number(document.getElementById('foul').innerHTML)-1;
+}
+function ptfoul(){
+ document.getElementById('tfoul').innerHTML = Number(document.getElementById('tfoul').innerHTML)+1;
+}
+function mtfoul(){
+ document.getElementById('tfoul').innerHTML = Number(document.getElementById('tfoul').innerHTML)-1;
+}
+function pycard(){
+ document.getElementById('ycard').innerHTML = Number(document.getElementById('ycard').innerHTML)+1;
+}
+function mycard(){
+ document.getElementById('ycard').innerHTML = Number(document.getElementById('ycard').innerHTML)-1;
+}
+function prcard(){
+ document.getElementById('rcard').innerHTML = Number(document.getElementById('rcard').innerHTML)+1;
+}
+function mrcard(){
+ document.getElementById('rcard').innerHTML = Number(document.getElementById('rcard').innerHTML)-1;
 }
 function toggle(){
 }

@@ -29,11 +29,14 @@
   <h1 id="auto-switch-score" value=0>0</h1>
   <button id="paswitch" onclick="paswitch()">+</button>
   <button id="maswitch" onclick="maswitch()">-</button>
+
   <button id="autoscale" onclick="toggle(this)">Scale</button>
   <h1 id="auto-scale-score" value=0>0</h1>
   <button id="pascale" onclick="pascale()">+</button>
   <button id="mascale" onclick="mascale()">-</button>
+
   <button id="autoline" onclick="toggle(this)">Cross Line</button>
+
   <button id="aleft" onclick="toggle(this)">Left</button>
   <button id="amiddle" onclick="toggle(this)">Middle</button>
   <button id="aright" onclick="toggle(this)">Right</button>
@@ -43,7 +46,6 @@
   <button id="ramp" onclick="toggle(this)">Ramp</button>
   <button id="bar" onclick="toggle(this)">Bar</button>
   <button id="pleb" onclick="toggle(this)">Plebeian</button>
-  <button id=>
 </div>
 <div id="cap">
   <h2>Fouls</h2>
@@ -51,14 +53,17 @@
   <h1 id="foul" value=0>0</h1>
   <button id="pfoul" onclick="pascale()">+</button>
   <button id="mfoul" onclick="mascale()">-</button>
+
   <button id="groundball" onclick="toggle(this)">Tech Foul</button>
   <h1 id="tfoul" value=0>0</h1>
   <button id="ptfoul" onclick="pascale()">+</button>
   <button id="mtfoul" onclick="mascale()">-</button>
+
   <button id="hopper" onclick="toggle(this)">Yellow Card</button>
   <h1 id="ycard" value=0>0</h1>
   <button id="pycard" onclick="pascale()">+</button>
   <button id="mycard" onclick="mascale()">-</button>
+
   <button id="macrogear" onclick="toggle(this)">Red Card</button>
   <h1 id="rcard" value=0>0</h1>
   <button id="prcard" onclick="pascale()">+</button>
@@ -125,7 +130,7 @@ position: absolute; bottom: 3%; right: 18%;
   width: 20%;
   height: 20%;
   position: inherit; left: 12%; top: 47%;
-  border: 2px solid black;
+  border: 0px solid black;
   padding-top: 10px;
 }
 #pswitch {
@@ -134,7 +139,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 11%;
 }
 #mswitch {
-  position: inherit; left: 14%; top: 59%;
+  position: inherit; left: 13%; top: 59%;
   width: 6%;
   height: 11%;
 }
@@ -153,7 +158,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 11%;
 }
 #mscale {
-  position: inherit; left: 42%; top: 59%;
+  position: inherit; left: 41%; top: 59%;
   width: 6%;
   height: 11%;
 
@@ -162,8 +167,7 @@ position: absolute; bottom: 3%; right: 18%;
   width: 20%;
   height: 20%;
   position: inherit; left: 40%; top: 47%;
-  
-  border: 2px solid black;
+  border: 0px solid black;
   padding-top: 10px;
 }
 #vault{
@@ -179,7 +183,7 @@ position: absolute; bottom: 3%; right: 18%;
   height: 11%;
 }
 #mvault {
-  position: inherit; left: 70%; top: 59%;
+  position: inherit; left: 69%; top: 59%;
   width: 6%;
   height: 11%;
 }
@@ -187,7 +191,7 @@ position: absolute; bottom: 3%; right: 18%;
   width: 20%;
   height: 20%;
   position: inherit; left: 68%; top: 47%;
-  border: 2px solid black;
+  border: 0px solid black;
   padding-top: 10px;
 }
 #autoswitch {
@@ -198,22 +202,20 @@ position: absolute; bottom: 3%; right: 18%;
   border: 0px;
 }
 #auto-switch-score {
-  border: 2px solid black;
+  border: 0px solid black;
   width: 25%;
   top: 20%;
   position: inherit;; left: 10%; top: 35%;
 }
 #paswitch{
- border: 0px solid black;
  width: 8%;
  height: 15%;
  position: inherit;; left: 26%; top: 43%;
 }
 #maswitch{
-border: 0px solid black;
  width: 8%;
  height: 15%;
- position: inherit;; left: 12%; top: 43%;
+ position: inherit;; left: 11%; top: 43%;
 }
 #autoscale {
   width: 25%;
@@ -223,22 +225,20 @@ border: 0px solid black;
   border: 0px;
 }
 #auto-scale-score {
-  border: 2px solid black;
+  border: 0px solid black;
   width: 25%;
   top: 20%;
   position: inherit;; right: 10%; top: 35%;
 }
 #pascale {
- border: 0px solid black;
  width: 8%;
  height: 15%;
- position: inherit;; right: 12%; top: 43%;
+ position: inherit;; right: 11%; top: 43%;
 }
 #mascale {
- border: 0px solid black;
  width: 8%;
  height: 15%;
- position: inherit;; right: 25.5%; top: 43%;
+ position: inherit;; right: 26%; top: 43%;
 }
 
 #autoline {
@@ -291,7 +291,7 @@ border: 0px solid black;
 }
 
 #foul {
-border: 2px solid black;
+border: 0px solid black;
 position: inherit; left: 4%; top: 55%;
 width: 20%;
 height: 25%;
@@ -299,19 +299,19 @@ padding-top: 20px;
 }
 
 #pfoul {
-position: inherit; bottom: 20%; left: 16.5%;
+position: inherit; bottom: 20%; left: 17%;
 width: 6%;
 height: 11%;
 }
 
 #mfoul {
-position: inherit; bottom: 20%; left: 6%;
+position: inherit; bottom: 20%; left: 5%;
 width: 6%;
 height: 11%;
 }
 
 #tfoul {
-border: 2px solid black;
+border: 0px solid black;
 position: inherit; left: 28%; top: 55%;
 width: 20%;
 height: 25%;
@@ -319,19 +319,19 @@ padding-top: 20px;
 }
 
 #ptfoul {
-position: inherit; bottom: 20%; left: 40.5%;
+position: inherit; bottom: 20%; left: 41%;
 width: 6%;
 height: 11%;
 }
 
 #mtfoul {
-position: inherit; bottom: 20%; left: 30%;
+position: inherit; bottom: 20%; left: 29%;
 width: 6%;
 height: 11%;
 }
 
 #ycard {
-border: 2px solid black;
+border: 0px solid black;
 position: inherit; left: 52%; top: 55%;
 width: 20%;
 height: 25%;
@@ -339,19 +339,19 @@ padding-top: 20px;
 }
 
 #pycard {
-position: inherit; bottom: 20%; right: 29.5%;
+position: inherit; bottom: 20%; right: 29%;
 width: 6%;
 height: 11%;
 }
 
 #mycard {
-position: inherit; bottom: 20%; right: 40%;
+position: inherit; bottom: 20%; right: 41%;
 width: 6%;
 height: 11%;
 }
 
 #rcard {
-border: 2px solid black;
+border: 0px solid black;
 position: inherit; left: 76%; top: 55%;
 width: 20%;
 height: 25%;
@@ -359,13 +359,13 @@ padding-top: 20px;
 }
 
 #prcard {
-position: inherit; bottom: 20%; right: 5.5%;
+position: inherit; bottom: 20%; right: 5%;
 width: 6%;
 height: 11%;
 }
 
 #mrcard {
-position: inherit; bottom: 20%; right: 16%;
+position: inherit; bottom: 20%; right: 17%;
 width: 6%;
 height: 11%;
 }

@@ -155,7 +155,13 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 12%; top: 10%;
-  border: 0px;
+  border: none;
+  background-color: Transparent;
+  background-image: none; 
+  cursor:pointer;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  outline:none;
 }
 #high-ball-score{
   width: 20%;
@@ -180,7 +186,13 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 40%; top: 10%;
-  border: 0px;
+  border: none;
+  background-color: Transparent;
+  background-image: none; 
+  cursor:pointer;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  outline:none;
 }
 
 #mid-ball-score{
@@ -208,7 +220,13 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 68%; top: 10%;
-  border: 0px;
+  border: none;
+  background-color: Transparent;
+  background-image: none; 
+  cursor:pointer;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  outline:none;
 }
 
 #low-ball-score{
@@ -236,7 +254,13 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 12%; bottom: 30%;
-  border: 0px;
+  border: none;
+  background-color: Transparent;
+  background-image: none; 
+  cursor:pointer;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  outline:none;
 }
 #groundcube{
   width: 20%;
@@ -261,8 +285,13 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 40%; bottom: 30%;
-  border: 0px;
+  border: none;
   background-color: Transparent;
+  background-image: none; 
+  cursor:pointer;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  outline:none;
 }
 #portalcube{
   width: 20%;
@@ -287,7 +316,13 @@ position: absolute; bottom: 3%; right: 18%;
   height: 20%;
   font-size: 1em;
   position: inherit; left: 68%; bottom: 30%;
-  border: 0px;
+  border: none;
+  background-color: Transparent;
+  background-image: none; 
+  cursor:pointer;
+  background-repeat:no-repeat;
+  overflow: hidden;
+  outline:none;
 }
 #pilecube{
   width: 20%;
@@ -681,6 +716,24 @@ function prcard(){
 }
 function mrcard(){
  document.getElementById('rcard').innerHTML = Number(document.getElementById('rcard').innerHTML)-1;
+}
+function pground(){
+ document.getElementById('groundcube').innerHTML = Number(document.getElementById('groundcube').innerHTML)+1;
+}
+function mground(){
+ document.getElementById('groundcube').innerHTML = Number(document.getElementById('groundcube').innerHTML)-1;
+}
+function pportal(){
+ document.getElementById('portalcube').innerHTML = Number(document.getElementById('portalcube').innerHTML)+1;
+}
+function mportal(){
+ document.getElementById('portalcube').innerHTML = Number(document.getElementById('portalcube').innerHTML)-1;
+}
+function ppile(){
+ document.getElementById('pilecube').innerHTML = Number(document.getElementById('pilecube').innerHTML)+1;
+}
+function mpile(){
+ document.getElementById('pilecube').innerHTML = Number(document.getElementById('pilecube').innerHTML)-1;
 }
 function toggle(){
 }

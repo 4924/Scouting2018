@@ -10,34 +10,34 @@
   <h2>Scored Cubes</h2>
 
   <h3 id="switch">Switch</h3>
-  <h1 id="high-ball-score" vaulue=0>0</h1>
+  <h1 id="high-ball-score" class="score" >0</h1>
   <button id="pswitch" onclick="pswitch()">+</button>
   <button id="mswitch" onclick="mswitch()">-</button>
 
   <h3 id="scale">Scale</h3>
-  <h1 id="mid-ball-score" value=0>0</h1>
+  <h1 id="mid-ball-score" class="score">0</h1>
   <button id="pscale" onclick="pscale()">+</button>
   <button id="mscale" onclick="mscale()">-</button>
 
   <h3 id="vault">Vault</h3>
-  <h1 id="low-ball-score" value=0>0</h1>
+  <h1 id="low-ball-score" class="score">0</h1>
   <button id="pvault" onclick="pvault()">+</button>
   <button id="mvault" onclick="mvault()">-</button>
 
   <h2 id="pickedup">Picked Up Cubes</h2>
 
   <h3 id="ground">Ground</h3>
-  <h1 id="groundcube" vaulue=0>0</h1>
+  <h1 id="groundcube" class="score">0</h1>
   <button id="pground" onclick="pground()">+</button>
   <button id="mground" onclick="mground()">-</button>
 
   <h3 id="portal">Portal</h3>
-  <h1 id="portalcube" vaulue=0>0</h1>
+  <h1 id="portalcube" class="score">0</h1>
   <button id="pportal" onclick="pportal()">+</button>
   <button id="mportal" onclick="mportal()">-</button>
 
   <h3 id="pile">Pile</h3>
-  <h1 id="pilecube" vaulue=0>0</h1>
+  <h1 id="pilecube" class="score">0</h1>
   <button id="ppile" onclick="ppile()">+</button>
   <button id="mpile" onclick="mpile()">-</button>
 
@@ -45,12 +45,12 @@
 <div id="auto">
   <h2>Auto</h2>
   <h3 id="autoswitch">Switch</h3>
-  <h1 id="auto-switch-score" value=0>0</h1>
+  <h1 id="auto-switch-score" class="score">0</h1>
   <button id="paswitch" onclick="paswitch()">+</button>
   <button id="maswitch" onclick="maswitch()">-</button>
 
   <h3 id="autoscale"">Scale</h3>
-  <h1 id="auto-scale-score" value=0>0</h1>
+  <h1 id="auto-scale-score" class="score">0</h1>
   <button id="pascale" onclick="pascale()">+</button>
   <button id="mascale" onclick="mascale()">-</button>
 
@@ -72,22 +72,22 @@
 <div id="cap">
   <h2>Fouls</h2>
   <h3 id="mechanum">Foul</h3>
-  <h1 id="foul" value=0>0</h1>
+  <h1 id="foul" class="score">0</h1>
   <button id="pfoul" onclick="pfoul()">+</button>
   <button id="mfoul" onclick="mfoul()">-</button>
 
   <h3 id="groundball">Tech Foul</h3>
-  <h1 id="tfoul" value=0>0</h1>
+  <h1 id="tfoul" class="score">0</h1>
   <button id="ptfoul" onclick="ptfoul()">+</button>
   <button id="mtfoul" onclick="mtfoul()">-</button>
 
   <h3 id="hopper">Yellow Card</h3>
-  <h1 id="ycard" value=0>0</h1>
+  <h1 id="ycard" class="score">0</h1>
   <button id="pycard" onclick="pycard()">+</button>
   <button id="mycard" onclick="mycard()">-</button>
 
   <h3 id="macrogear">Red Card</h3>
-  <h1 id="rcard" value=0>0</h1>
+  <h1 id="rcard" class="score">0</h1>
   <button id="prcard" onclick="prcard()">+</button>
   <button id="mrcard" onclick="mrcard()">-</button>
 </div>
@@ -154,11 +154,7 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit; left: 19.5%; top: 10%;
 }
 #high-ball-score{
-  width: 20%;
-  height: 20%;
   position: inherit; left: 12%; top: 23%;
-  border: 0px solid black;
-  padding-top: 10px;
 }
 #pswitch {
   position: inherit; left: 25%; top: 30%;
@@ -176,11 +172,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #mid-ball-score{
-  width: 20%;
-  height: 20%;
-  position: inherit; left: 40%; top: 23%;
-  border: 0px solid black;
-  padding-top: 10px;  
+  position: inherit; left: 40%; top: 23%; 
 }
 
 #pscale {
@@ -199,11 +191,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #low-ball-score{
-  width: 20%;
-  height: 20%;
   position: inherit; left: 68%; top: 23%;
-  border: 0px solid black;
-  padding-top: 10px
 }
 
 #pvault {
@@ -222,11 +210,7 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit; left: 19%; bottom: 30%;
 }
 #groundcube{
-  width: 20%;
-  height: 20%;
   position: inherit; left: 12%; bottom: 7%;
-  border: 0px solid black;
-  padding-top: 10px;
 }
 #pground{
   position: inherit; left: 25%; bottom: 16%;
@@ -243,11 +227,7 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit; left: 47.5%; bottom: 30%;
 }
 #portalcube{
-  width: 20%;
-  height: 20%;
   position: inherit; left: 40%; bottom: 7%;
-  border: 0px solid black;
-  padding-top: 10px;
 }
 #pportal{
   position: inherit; left: 53%; bottom: 16%;
@@ -265,11 +245,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #pilecube{
-  width: 20%;
-  height: 20%;
   position: inherit; left: 68%; bottom: 7%;
-  border: 0px solid black;
-  padding-top: 10px;
 }
 #ppile{
   position: inherit; left: 81%; bottom: 16%;
@@ -290,10 +266,7 @@ position: absolute; bottom: 3%; right: 18%;
   border: 0px;
 }
 #auto-switch-score {
-  border: 0px solid black;
-  width: 25%;
-  top: 20%;
-  position: inherit;; left: 10%; top: 35%;
+  position: inherit;; left: 12.5%; top: 35%;
 }
 #paswitch{
  width: 8%;
@@ -313,10 +286,7 @@ position: absolute; bottom: 3%; right: 18%;
   border: 0px;
 }
 #auto-scale-score {
-  border: 0px solid black;
-  width: 25%;
-  top: 20%;
-  position: inherit;; right: 10%; top: 35%;
+  position: inherit;; right: 12.5%; top: 35%;
 }
 #pascale {
  width: 8%;
@@ -379,11 +349,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #foul {
-border: 0px solid black;
 position: inherit; left: 4%; top: 50%;
-width: 20%;
-height: 25%;
-padding-top: 20px;
 }
 
 #pfoul {
@@ -399,11 +365,7 @@ height: 11%;
 }
 
 #tfoul {
-border: 0px solid black;
 position: inherit; left: 28%; top: 50%;
-width: 20%;
-height: 25%;
-padding-top: 20px;
 }
 
 #ptfoul {
@@ -419,11 +381,7 @@ height: 11%;
 }
 
 #ycard {
-border: 0px solid black;
 position: inherit; left: 52%; top: 50%;
-width: 20%;
-height: 25%;
-padding-top: 20px;
 }
 
 #pycard {
@@ -439,11 +397,7 @@ height: 11%;
 }
 
 #rcard {
-border: 0px solid black;
 position: inherit; left: 76%; top: 50%;
-width: 20%;
-height: 25%;
-padding-top: 20px;
 }
 
 #prcard {
@@ -555,8 +509,11 @@ height: 11%;
   outline:none;
 }
 
-.elias2{
-
+.score{
+  width: 20%;
+  height: 20%;
+  border: 0px solid black;
+  padding-top: 10px;
 }
 .selected{
   border: 2px solid black;

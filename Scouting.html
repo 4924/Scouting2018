@@ -56,9 +56,9 @@
 
   <button id="autoline" onclick="toggle(this)">Cross Line</button>
 
-  <button id="aleft" onclick="toggle(this)">Left</button>
-  <button id="amiddle" onclick="toggle(this)">Middle</button>
-  <button id="aright" onclick="toggle(this)">Right</button>
+  <button id="aleft" class="aposition" onclick="toggle(this)">Left</button>
+  <button id="amiddle" class="aposition" onclick="toggle(this)">Middle</button>
+  <button id="aright" class="aposition" onclick="toggle(this)">Right</button>
 </div>
 <div id="climb">
   <h2>Climb</h2>
@@ -307,24 +307,15 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #aleft {
-  width: 20%;
-  height: 20%;
-  font-size: 1em;
   position: inherit;; left: 15%; bottom: 10%;
 }
-
 #aright {
-  width: 20%;
-  height: 20%;
-  font-size: 1em;
   position: inherit;; left: 65%; bottom: 10%;
 }
 #amiddle {
-  width: 20%;
-  height: 20%;
-  font-size: 1em;
   position: inherit;; left: 40%; bottom: 10%;  
 }
+
 #lock {
   width: 15%;
   height: 15%;
@@ -429,41 +420,23 @@ height: 11%;
 }
 
 #baryes{
-
  width: 20%;
-
  height: 14%;
-
  font-size: 1em;
-
  position: inherit; left: 40%; top: 15%;
-
-
 }
 #barno{
-
  width: 20%;
-
  height: 14%;
-
  font-size: 1em;
-
  position: inherit; left: 40%; top: 35%;
-
-
 }
 
 #baryesb{
-
  width: 20%;
-
  height: 14%;
-
  font-size: 1em;
-
  position: inherit; left: 40%; top: 55%;
-
-
 }
 
 #pleb{
@@ -507,6 +480,12 @@ height: 11%;
   background-repeat:no-repeat;
   overflow: hidden;
   outline:none;
+}
+
+.aposition{
+  width: 20%;
+  height: 20%;
+  font-size: 1em;
 }
 
 .score{
@@ -642,7 +621,8 @@ function ppile(){
 function mpile(){
  document.getElementById('pilecube').innerHTML = Number(document.getElementById('pilecube').innerHTML)-1;
 }
-function toggle(){
+
+function toggle1(){
 }
 function eliasisdumb(){
   setTimeout(function(){alert("elias is super, very stinky"); }, 0);

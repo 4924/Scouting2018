@@ -54,20 +54,20 @@
   <button id="pascale" onclick="pascale()">+</button>
   <button id="mascale" onclick="mascale()">-</button>
 
-  <button id="autoline" onclick="toggle(this)">Cross Line</button>
+  <button id="autoline" >Cross Line</button>
 
-  <button id="aleft" class="aposition" onclick="toggle(this)">Left</button>
-  <button id="amiddle" class="aposition" onclick="toggle(this)">Middle</button>
-  <button id="aright" class="aposition" onclick="toggle(this)">Right</button>
+  <button id="aleft" class="aposition">Left</button>
+  <button id="amiddle" class="aposition" >Middle</button>
+  <button id="aright" class="aposition" >Right</button>
 </div>
 <div id="climb">
   <h2>Climb</h2>
-  <button id="ramp" onclick="toggle(this)">Ramp</button>
-  <button id="bar" onclick="toggle(this)">Bar</button>
-  <button id="baryes" onclick="toggle(this)">can climb Bar</button>
-  <button id="barno" onclick="toggle(this)">cannot climb Bar</button>
-  <button id="baryesb" onclick="toggle(this)">can climb Bar but off of another robot</button>
-  <button id="pleb" onclick="toggle(this)">Plebeian</button>
+  <button id="ramp" >Ramp</button>
+  <button id="bar" >Bar</button>
+  <button id="baryes" >can climb Bar</button>
+  <button id="barno" >cannot climb Bar</button>
+  <button id="baryesb" >can climb Bar but off of another robot</button>
+  <button id="pleb" >Plebeian</button>
 </div>
 <div id="cap">
   <h2>Fouls</h2>
@@ -622,8 +622,40 @@ function mpile(){
  document.getElementById('pilecube').innerHTML = Number(document.getElementById('pilecube').innerHTML)-1;
 }
 
-function toggle1(){
-}
+document.getElementById("aleft").addEventListener('click', (event)=>{
+	if (event.target.style.background == 'cyan') {
+	    document.getElementById("aleft").style.background = 'white';
+	} else {
+		document.getElementById("aleft").style.background = 'cyan';
+	};
+});
+
+document.getElementById("aright").addEventListener('click', (event)=>{
+	if (event.target.style.background == 'cyan') {
+	    document.getElementById("aright").style.background = 'white';
+	} else {
+		document.getElementById("aright").style.background = 'cyan';
+	};
+});
+
+document.getElementById("amiddle").addEventListener('click', (event)=>{
+	if (event.target.style.background == 'cyan') {
+	    document.getElementById("amiddle").style.background = 'white';
+	} else {
+		document.getElementById("amiddle").style.background = 'cyan';
+	};
+});
+
+document.getElementById("autoline").addEventListener('click', (event)=>{
+	if (event.target.style.background == 'cyan') {
+	    document.getElementById("autoline").style.background = 'white';
+	} else {
+		document.getElementById("autoline").style.background = 'cyan';
+	};
+});
+
+
+
 function eliasisdumb(){
   setTimeout(function(){alert("elias is super, very, very stinky"); }, 0);
 }

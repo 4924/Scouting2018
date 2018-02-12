@@ -54,7 +54,7 @@
   <button id="pascale" onclick="pascale()">+</button>
   <button id="mascale" onclick="mascale()">-</button>
 
-  <button id="autoline" >Cross Line</button>
+  <button id="autoline">Cross Line</button>
 
   <button id="aleft" class="aposition">Left</button>
   <button id="amiddle" class="aposition" >Middle</button>
@@ -62,12 +62,12 @@
 </div>
 <div id="climb">
   <h2>Climb</h2>
-  <button id="ramp" >Ramp</button>
-  <button id="bar" >Bar</button>
+  <div id="ramp" >Ramp</div>
+  <div id="bar" >Bar</div>
   <button id="baryes" >can climb Bar</button>
   <button id="barno" >cannot climb Bar</button>
   <button id="baryesb" >can climb Bar but off of another robot</button>
-  <button id="pleb" >Plebeian</button>
+  <div id="pleb" >Plebeian</div>
 </div>
 <div id="cap">
   <h2>Fouls</h2>
@@ -91,10 +91,45 @@
   <button id="prcard" onclick="prcard()">+</button>
   <button id="mrcard" onclick="mrcard()">-</button>
 </div>
-<button id="lock" onclick="eliasisdumb()">QR</button>
+<div id="teaminfo">
+Team Number:<br>
+<input type="text" name="teamnum">
+<br>
+  Match Number:<br>
+  <input type="text" name="matchnum">
+  <br>
+</div>
 <textarea>
- Additional notes . . .
+Issues With Robot During Match
 </textarea>
+
+<button id="submit" onclick="window.location.href='http://www.coolmath.com/'">s u b m i t</button>
+
+
+
+<div id="pilot">
+--Driver Defense Skill--
+<br>
+**On A Scale Of 1 To 10**
+<br>
+**1 being bad and 10 being good**<br>
+<input type="text" name="Defskill">
+<br>
+  --Driver Offense Skill--
+<br>
+**On A Scale Of 1 To 10**
+<br>
+**1 being bad and 10 being good**<br><br>
+  <input type="text" name="matchnum">
+  <br>
+</div>
+
+<textarea id="notes">
+ Additional notes
+ </textarea>
+
+
+
 </body>
 <style>
 h1 {
@@ -105,11 +140,75 @@ h2 {
   margin: 1%;
 }
 
+
+
 textarea {
 position: absolute; bottom: 2%; right: 17.75%;
-width: 24%; height: 26%;
+width: 23.7%; height: 26%;
 border: 2px solid black;
 }
+
+#textarea2 {
+ 
+ position: absolute; bottom: 2%; right: 18%;
+ 
+ width: 6.75%; height: 26%;
+ 
+ border: 2px solid black;
+ } 
+
+#pilot {
+ 
+ position: absolute; bottom: -26%; right: 2%;
+ 
+ width: 48%; height: 26%;
+ 
+ border: 2px solid black;
+ } 
+
+ #notes {
+ 
+ position: absolute; bottom: -26%; right: 50.5%;
+ 
+ width: 48%; height: 25.6%;
+ 
+ border: 2px solid black;
+ } 
+
+ #submit {
+  width: 13%;
+  height: 9.8%;
+  border: 2px solid black;
+  font-size: 2em;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  -webkit-text-stroke: 2.0px #000000;
+  position: absolute; right: -11%; bottom: 18.45%;
+  color: white;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+  10px 20px 5px rgba(0,0,0,0.05),
+ -10px 20px 5px rgba(0,0,0,0.05);
+  background-color: white;
+  font-weight: 900;
+}
+
+
+#teaminfo {
+ 
+ position: absolute; bottom: 20.5%; right: 3%;
+ 
+ width: 14.5%; height: 9%;
+ 
+ 
+ }
+#Defskill {
+
+
+width: 14.5%; height: 5%;
+
+   font-size: 5em;
+}
+
 
 #pickedup{
 position: inherit; bottom: 43%; left: 41%;
@@ -316,21 +415,6 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit;; left: 40%; bottom: 10%;  
 }
 
-#lock {
-  width: 15%;
-  height: 15%;
-  border: 2px solid black;
-  font-size: 5em;
-  -webkit-text-stroke: 2.0px #000000;
-  position: absolute; right: 2%; bottom: 3%;
-  color: white;
-  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-  10px 20px 5px rgba(0,0,0,0.05),
- -10px 20px 5px rgba(0,0,0,0.05);
-  background-color: white;
-  font-weight: 900;
-}
-
 #mechanum {
   width: 20%;
   height: 24%;
@@ -422,20 +506,20 @@ height: 11%;
 #baryes{
  width: 20%;
  height: 14%;
- font-size: 1em;
+ font-size: .9em;
  position: inherit; left: 40%; top: 15%;
 }
 #barno{
  width: 20%;
  height: 14%;
- font-size: 1em;
+ font-size: .9em;
  position: inherit; left: 40%; top: 35%;
 }
 
 #baryesb{
  width: 20%;
  height: 14%;
- font-size: 1em;
+ font-size: .77em;
  position: inherit; left: 40%; top: 55%;
 }
 
@@ -521,15 +605,7 @@ height: 11%;
 button{
   padding: 0px;
 }
-input {
-  font-size: 2.4em;
-  background-color: transparent;
-  text-align: center;
-  border-width: 0;
-  width: 100%;
-  margin: 0 0 .1em 0;
-  color: #fff;
-}
+
 label {
   display: block;
   font-size: .8em;
@@ -623,35 +699,35 @@ function mpile(){
 }
 
 document.getElementById("aleft").addEventListener('click', (event)=>{
-	if (event.target.style.background == 'rgb(201, 201, 201)') {
-	    document.getElementById("aleft").style.background = 'white';
-	} else {
-		document.getElementById("aleft").style.background = 'rgb(201, 201, 201)';
-	};
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("aleft").style.background = 'white';
+  } else {
+    document.getElementById("aleft").style.background = 'cyan';
+  };
 });
 
 document.getElementById("aright").addEventListener('click', (event)=>{
-	if (event.target.style.background == 'rgb(201, 201, 201)') {
-	    document.getElementById("aright").style.background = 'white';
-	} else {
-		document.getElementById("aright").style.background = 'rgb(201, 201, 201)';
-	};
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("aright").style.background = 'white';
+  } else {
+    document.getElementById("aright").style.background = 'cyan';
+  };
 });
 
 document.getElementById("amiddle").addEventListener('click', (event)=>{
-	if (event.target.style.background == 'rgb(201, 201, 201)') {
-	    document.getElementById("amiddle").style.background = 'white';
-	} else {
-		document.getElementById("amiddle").style.background = 'rgb(201, 201, 201)';
-	};
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("amiddle").style.background = 'white';
+  } else {
+    document.getElementById("amiddle").style.background = 'cyan';
+  };
 });
 
 document.getElementById("autoline").addEventListener('click', (event)=>{
-	if (event.target.style.background == 'rgb(201, 201, 201)') {
-	    document.getElementById("autoline").style.background = 'white';
-	} else {
-		document.getElementById("autoline").style.background = 'rgb(201, 201, 201)';
-	};
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("autoline").style.background = 'white';
+  } else {
+    document.getElementById("autoline").style.background = 'cyan';
+  };
 });
 
 

@@ -63,10 +63,12 @@
 <div id="climb">
   <h2>Climb</h2>
   <div id="ramp" >Ramp</div>
+  <button id="rampyes" >Can climb a ramp</button>
+  <button id="rampyesb" >Has a ramp</button>
   <div id="bar" >Bar</div>
-  <button id="baryes" >can climb Bar</button>
-  <button id="barno" >cannot climb Bar</button>
-  <button id="baryesb" >can climb Bar but off of another robot</button>
+  <button id="baryes" >Can climb bar</button>
+  <button id="barno" >Has a bar</button>
+  <button id="baryesb" >Climbs bar off another robot</button>
   <div id="pleb" >Plebeian</div>
 </div>
 <div id="cap">
@@ -99,8 +101,7 @@ Team Number:<br>
   <input type="text" name="matchnum">
   <br>
 </div>
-<textarea>
-Issues With Robot During Match
+<textarea placeholder="Issues With Robot During Match">
 </textarea>
 
 <button id="submit" onclick="window.location.href='http://www.coolmath.com/'">s u b m i t</button>
@@ -124,9 +125,8 @@ Issues With Robot During Match
   <br>
 </div>
 
-<textarea id="notes">
- Additional notes
- </textarea>
+<textarea id="notes" placeholder="Additional notes . . . ">
+</textarea>
 
 
 
@@ -491,15 +491,27 @@ height: 11%;
  width: 20%;
  height: 20%;
  font-size: 1em;
- position: inherit; left: 12%; top: 73%;
+ position: inherit; left: 12%; top: 80%;
  border: 1px;
+}
+#rampyes{
+ width: 20%;
+ height: 16%;
+ font-size: .9em;
+ position: inherit; left: 12%; top: 20%;
+}
+#rampyesb{
+ width: 20%;
+ height: 16%;
+ font-size: .9em;
+ position: inherit; left: 12%; top: 45%;
 }
 
 #bar{
  width: 20%;
  height: 20%;
  font-size: 1em;
- position: inherit; left: 40%; top: 73%;
+ position: inherit; left: 40%; top: 80%;
  border: 1px;
 }
 
@@ -519,7 +531,7 @@ height: 11%;
 #baryesb{
  width: 20%;
  height: 14%;
- font-size: .77em;
+ font-size: .85em;
  position: inherit; left: 40%; top: 55%;
 }
 
@@ -527,7 +539,7 @@ height: 11%;
  width: 20%;
  height: 20%;
  font-size: 1em;
- position: inherit; right:  12%; top: 73%;
+ position: inherit; right:  12%; top: 80%;
  border: 1px;
 }
 #groundball {

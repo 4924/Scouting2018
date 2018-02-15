@@ -57,19 +57,21 @@
   <button id="autoline">Cross Line</button>
 
   <button id="aleft" class="aposition">Left</button>
-  <button id="amiddle" class="aposition" >Middle</button>
-  <button id="aright" class="aposition" >Right</button>
+  <button id="amiddle" class="aposition">Middle</button>
+  <button id="aright" class="aposition">Right</button>
 </div>
 <div id="climb">
   <h2>Climb</h2>
-  <div id="ramp" >Ramp</div>
-  <button id="rampyes" >Can climb a ramp</button>
-  <button id="rampyesb" >Has a ramp</button>
-  <div id="bar" >Bar</div>
-  <button id="baryes" >Can climb bar</button>
-  <button id="barno" >Has a bar</button>
-  <button id="baryesb" >Climbs bar off another robot</button>
-  <div id="pleb" >Plebeian</div>
+  <h3 id="cantheyclimb">Can they climb?</h3>
+  <button id="midbar" class="cantheyclimb" onclick="midbar()">Middle Bar</button>
+  <button id="sidebar" class="cantheyclimb" onclick="midbar()">Side of Bar</button>
+  <button id="otherrob" class="cantheyclimb" onclick="midbar()">Other Robot</button> 
+  <h3 id="climbee">Can other robots climb off them?</h3>
+  <button id="onerob" class="numberofrob" onclick="onerob()">1</button>
+  <button id="tworob" class="numberofrob" onclick="tworob()">2</button>
+  <h3 id="successinclimbing">If no success, whose fault?</h3>
+  <button id="ownfault" class="fault">Own</button>
+  <button id="otherfault" class="fault">Other</button>
 </div>
 <div id="cap">
   <h2>Fouls</h2>
@@ -166,7 +168,7 @@ border: 2px solid black;
  border: 2px solid black;
  } 
 
- #notes {
+#notes {
  
  position: absolute; bottom: -26%; right: 50.5%;
  
@@ -175,7 +177,7 @@ border: 2px solid black;
  border: 2px solid black;
  } 
 
- #submit {
+#submit {
   width: 13%;
   height: 9.8%;
   border: 2px solid black;
@@ -193,20 +195,14 @@ border: 2px solid black;
 }
 
 
-#teaminfo {
- 
+#teaminfo { 
  position: absolute; bottom: 20.5%; right: 3%;
- 
- width: 14.5%; height: 9%;
- 
- 
- }
+ width: 14.5%; height: 9%; 
+}
+
 #Defskill {
-
-
-width: 14.5%; height: 5%;
-
-   font-size: 5em;
+ width: 14.5%; height: 5%;
+ font-size: 5em;
 }
 
 
@@ -214,6 +210,7 @@ width: 14.5%; height: 5%;
 position: inherit; bottom: 43%; left: 41%;
 
 }
+
 #text{
 border: 2px solid black;
 position: absolute; bottom: 3%; right: 18%;
@@ -415,6 +412,50 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit;; left: 40%; bottom: 10%;  
 }
 
+#cantheyclimb{
+  font-size: 1.5em; 
+  position:inherit;; left: 15%; top: 6%;
+}
+
+#midbar{
+  position:inherit;; left: 2%; top: 30%; 
+}
+
+#sidebar{
+  position:inherit;; left: 18.5%; top: 30%; 
+}
+
+#otherrob{
+  position:inherit;; left: 35%; top: 30%; 
+}
+
+#climbee{
+  font-size:1.5em;
+  position:inherit;; right: 2%; top: 6%;
+}
+
+#onerob{
+  position:inherit;; right: 26%; top: 30%;
+}
+
+#tworob{
+  position:inherit;; right: 3%; top: 30%;
+}
+
+#successinclimbing{
+  font-size: 1.5em;
+  position:inherit;; right: 5%; top: 50%;
+}
+
+#ownfault{
+  position:inherit;; right: 24%; top: 70%;
+}
+
+#otherfault{
+  position:inherit;; right: 5%; top: 70%;
+}
+
+
 #mechanum {
   width: 20%;
   height: 24%;
@@ -487,61 +528,6 @@ width: 6%;
 height: 11%;
 }
 
-#ramp {
- width: 20%;
- height: 20%;
- font-size: 1em;
- position: inherit; left: 12%; top: 80%;
- border: 1px;
-}
-#rampyes{
- width: 20%;
- height: 16%;
- font-size: .9em;
- position: inherit; left: 12%; top: 20%;
-}
-#rampyesb{
- width: 20%;
- height: 16%;
- font-size: .9em;
- position: inherit; left: 12%; top: 45%;
-}
-
-#bar{
- width: 20%;
- height: 20%;
- font-size: 1em;
- position: inherit; left: 40%; top: 80%;
- border: 1px;
-}
-
-#baryes{
- width: 20%;
- height: 14%;
- font-size: .9em;
- position: inherit; left: 40%; top: 15%;
-}
-#barno{
- width: 20%;
- height: 14%;
- font-size: .9em;
- position: inherit; left: 40%; top: 35%;
-}
-
-#baryesb{
- width: 20%;
- height: 14%;
- font-size: .85em;
- position: inherit; left: 40%; top: 55%;
-}
-
-#pleb{
- width: 20%;
- height: 20%;
- font-size: 1em;
- position: inherit; right:  12%; top: 80%;
- border: 1px;
-}
 #groundball {
   width: 20%;
   height: 24%;
@@ -563,6 +549,21 @@ height: 11%;
   font-size: 1.3em;
   position: inherit; left: 76%; top: 30%;
   border: 0px;
+}
+
+.cantheyclimb{
+  width: 15%;
+  height: 10%;
+}
+
+.numberofrob{
+  width: 20%;
+  height: 10%; 
+}
+
+.fault{
+  width: 17%;
+  height: 10%;
 }
 
 .elias{

@@ -63,22 +63,22 @@
 <div id="climb">
   <h2>Climb</h2>
   <h3 id="cantheyclimb">Can they climb?</h3>
-  <button id="midbar" class="cantheyclimb" onclick="midbar()">Middle Bar</button>
-  <button id="sidebar" class="cantheyclimb" onclick="midbar()">Side of Bar</button>
-  <button id="otherrob" class="cantheyclimb" onclick="midbar()">Other Robot</button> 
+  <button id="midbar" class="cantheyclimb" >Middle Bar</button>
+  <button id="sidebar" class="cantheyclimb" >Side of Bar</button>
+  <button id="otherrob" class="cantheyclimb" >Other Robot</button> 
   <h3 id="climbee">Can other robots climb off them?</h3>
-  <button id="onerob" class="numberofrob" onclick="onerob()">1</button>
-  <button id="tworob" class="numberofrob" onclick="tworob()">2</button>
+  <button id="onerob" class="numberofrob" >1</button>
+  <button id="tworob" class="numberofrob" >2</button>
   <h3 id="successinclimbing">If no success, whose fault?</h3>
-  <button id="ownfault" class="fault">Own</button>
-  <button id="otherfault" class="fault">Other</button>
+  <button id="ownfault" class="fault" >Own</button>
+  <button id="otherfault" class="fault" >Other</button>
   <h3 id="ramp">Ramp</h3>
-  <button id="hasramp" class="ramp">Has a ramp</button>
-  <button id="canclimbramp" class="ramp">Can climb a Ramp</button>
-  <button id="successonramp" class="ramp">Success?</button>
+  <button id="hasramp" class="ramp" >Has a ramp</button>
+  <button id="canclimbramp" class="ramp" >Can climb a Ramp</button>
+  <button id="successonramp" class="ramp" >Success?</button>
   <h3 id="lift">Can they lift other robots?</h3>
-  <button id="yeslift" class="lift">Yes</button>
-  <button id="nolift" class="lift">No</button>
+  <button id="yeslift" class="lift" >Yes</button>
+  <button id="nolift" class="lift" >No</button>
 </div>
 <div id="cap">
   <h2>Fouls</h2>
@@ -110,8 +110,7 @@ Team Number:<br>
   <input type="text" name="matchnum">
   <br>
 </div>
-<textarea placeholder="Issues With Robot During Match">
-</textarea>
+<textarea placeholder="Issues With Robot During Match"></textarea>
 
 <button id="submit" onclick="window.location.href='http://www.sexygeorgelopez.com'">s u b m i t</button>
 
@@ -134,8 +133,7 @@ Team Number:<br>
   <br>
 </div>
 
-<textarea id="notes" placeholder="Additional notes . . . ">
-</textarea>
+<textarea id="notes" placeholder="Additional notes . . . "></textarea>
 
 
 
@@ -153,7 +151,7 @@ h2 {
 
 textarea {
 position: absolute; bottom: 2%; right: 17.75%;
-width: 23.7%; height: 26%;
+width: 24%; height: 26%;
 border: 2px solid black;
 }
 
@@ -179,7 +177,7 @@ border: 2px solid black;
  
  position: absolute; bottom: -26%; right: 50.5%;
  
- width: 48%; height: 25.6%;
+ width: 48%; height: 26%;
  
  border: 2px solid black;
  } 
@@ -781,6 +779,102 @@ document.getElementById("amiddle").addEventListener('click', (event)=>{
   };
 });
 
+document.getElementById("midbar").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("midbar").style.background = 'white';
+  } else {
+    document.getElementById("midbar").style.background = 'cyan';
+  };
+});
+
+document.getElementById("sidebar").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("sidebar").style.background = 'white';
+  } else {
+    document.getElementById("sidebar").style.background = 'cyan';
+  };
+});
+
+document.getElementById("otherrob").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("otherrob").style.background = 'white';
+  } else {
+    document.getElementById("otherrob").style.background = 'cyan';
+  };
+});
+
+document.getElementById("onerob").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("onerob").style.background = 'white';
+  } else {
+    document.getElementById("onerob").style.background = 'cyan';
+  };
+});
+
+document.getElementById("tworob").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("tworob").style.background = 'white';
+  } else {
+    document.getElementById("tworob").style.background = 'cyan';
+  };
+});
+
+document.getElementById("ownfault").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("ownfault").style.background = 'white';
+  } else {
+    document.getElementById("ownfault").style.background = 'cyan';
+  };
+});
+
+document.getElementById("otherfault").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("otherfault").style.background = 'white';
+  } else {
+    document.getElementById("otherfault").style.background = 'cyan';
+  };
+});
+
+document.getElementById("hasramp").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("hasramp").style.background = 'white';
+  } else {
+    document.getElementById("hasramp").style.background = 'cyan';
+  };
+});
+
+document.getElementById("canclimbramp").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("canclimbramp").style.background = 'white';
+  } else {
+    document.getElementById("canclimbramp").style.background = 'cyan';
+  };
+});
+
+document.getElementById("successonramp").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("successonramp").style.background = 'white';
+  } else {
+    document.getElementById("successonramp").style.background = 'cyan';
+  };
+});
+
+document.getElementById("yeslift").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("yeslift").style.background = 'white';
+  } else {
+    document.getElementById("yeslift").style.background = 'cyan';
+  };
+});
+
+document.getElementById("nolift").addEventListener('click', (event)=>{
+  if (event.target.style.background == 'cyan') {
+      document.getElementById("nolift").style.background = 'white';
+  } else {
+    document.getElementById("nolift").style.background = 'cyan';
+  };
+});
+
 document.getElementById("autoline").addEventListener('click', (event)=>{
   if (event.target.style.background == 'cyan') {
       document.getElementById("autoline").style.background = 'white';
@@ -788,7 +882,6 @@ document.getElementById("autoline").addEventListener('click', (event)=>{
     document.getElementById("autoline").style.background = 'cyan';
   };
 });
-
 
 
 function eliasisdumb(){

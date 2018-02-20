@@ -2,7 +2,7 @@
 <html>
   <head>
 <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1" charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="match.css" />
+<link rel="stylesheet" type="text/css" href="scouting.css" />
 <title>Scout</title>
   </head>
   <body>
@@ -12,34 +12,34 @@
   <h3 id="switch">Switch</h3>
   <h1 id="switchscore" class="score" >0</h1>
   <button id="pswitchscore" class="toggle">+</button>
-  <button id="mswitchscore" class="toggle">-</button>
+  <button id="mswitchscore" class="toggledown">-</button>
 
   <h3 id="scale">Scale</h3>
   <h1 id="scalescore" class="score">0</h1>
   <button id="pscalescore" class="toggle">+</button>
-  <button id="mscalescore" class="toggle">-</button>
+  <button id="mscalescore" class="toggledown">-</button>
 
   <h3 id="vault">Vault</h3>
   <h1 id="vaultscore" class="score">0</h1>
   <button id="pvaultscore" class="toggle">+</button>
-  <button id="mvaultscore" class="toggle">-</button>
+  <button id="mvaultscore" class="toggledown">-</button>
 
   <h2 id="pickedup">Picked Up Cubes</h2>
 
   <h3 id="ground">Ground</h3>
   <h1 id="groundcube" class="score">0</h1>
   <button id="pgroundcube" class="toggle">+</button>
-  <button id="mgroundcube" class="toggle">-</button>
+  <button id="mgroundcube" class="toggledown">-</button>
 
   <h3 id="portal">Portal</h3>
   <h1 id="portalcube" class="score">0</h1>
   <button id="pportalcube" class="toggle">+</button>
-  <button id="mportalcube" class="toggle">-</button>
+  <button id="mportalcube" class="toggledown">-</button>
 
   <h3 id="pile">Pile</h3>
   <h1 id="pilecube" class="score">0</h1>
   <button id="ppilecube" class="toggle">+</button>
-  <button id="mpilecube" class="toggle">-</button>
+  <button id="mpilecube" class="toggledown">-</button>
 
 </div>
 <div id="auto">
@@ -47,12 +47,12 @@
   <h3 id="autoswitch">Switch</h3>
   <h1 id="aswitch" class="score">0</h1>
   <button id="paswitch" class="toggle">+</button>
-  <button id="maswitch" class="toggle">-</button>
+  <button id="maswitch" class="toggledown">-</button>
 
   <h3 id="autoscale"">Scale</h3>
   <h1 id="ascale" class="score">0</h1>
   <button id="pascale" class="toggle">+</button>
-  <button id="mascale" class="toggle">-</button>
+  <button id="mascale" class="toggledown">-</button>
 
   <button id="autoline">Cross Line</button>
 
@@ -85,22 +85,22 @@
   <h3 id="mechanum">Foul</h3>
   <h1 id="foul" class="score">0</h1>
   <button id="pfoul" class="toggle">+</button>
-  <button id="mfoul" class="toggle">-</button>
+  <button id="mfoul" class="toggledown">-</button>
 
   <h3 id="groundball">Tech Foul</h3>
   <h1 id="tfoul" class="score">0</h1>
   <button id="ptfoul" class="toggle">+</button>
-  <button id="mtfoul" class="toggle">-</button>
+  <button id="mtfoul" class="toggledown">-</button>
 
   <h3 id="hopper">Yellow Card</h3>
   <h1 id="ycard" class="score">0</h1>
   <button id="pycard" class="toggle">+</button>
-  <button id="mycard" class="toggle">-</button>
+  <button id="mycard" class="toggledown">-</button>
 
   <h3 id="macrogear">Red Card</h3>
   <h1 id="rcard" class="score">0</h1>
   <button id="prcard" class="toggle">+</button>
-  <button id="mrcard" class="toggle">-</button>
+  <button id="mrcard" class="toggledown">-</button>
 </div>
 <div id="teaminfo">
 Team Number:<br>
@@ -135,6 +135,7 @@ Team Number:<br>
 
 <textarea id="notes" placeholder="Additional notes . . . "></textarea>
 
+<script src="scouting.js"></script>
 
  </body>
  </html>

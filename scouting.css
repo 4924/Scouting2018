@@ -4,6 +4,7 @@ h1 {
 h2 {
   padding: 0%;
   margin: 1%;
+  font-size: 1.8vw;
 }
 
 
@@ -71,7 +72,7 @@ border: 2px solid black;
 
 
 #pickedup{
-position: inherit; bottom: 43%; left: 41%;
+position: inherit; bottom: 43%; left: 38%;
 
 }
 
@@ -112,6 +113,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 #switch{
   position: inherit; left: 19.5%; top: 10%;
+  font-size: 1.2vw;
 }
 #switchscore{
   position: inherit; left: 12%; top: 23%;
@@ -129,6 +131,7 @@ position: absolute; bottom: 3%; right: 18%;
 
 #scale{
   position: inherit; left: 48%; top: 10%;
+  font-size: 1.2vw;
 }
 
 #scalescore{
@@ -148,6 +151,7 @@ position: absolute; bottom: 3%; right: 18%;
 
 #vault{
   position: inherit; left: 76%; top: 10%;
+  font-size: 1.2vw;
 }
 
 #vaultscore{
@@ -168,6 +172,7 @@ position: absolute; bottom: 3%; right: 18%;
 
 #ground{
   position: inherit; left: 19%; bottom: 30%;
+  font-size: 1.2vw;
 }
 #groundcube{
   position: inherit; left: 12%; bottom: 7%;
@@ -185,6 +190,7 @@ position: absolute; bottom: 3%; right: 18%;
 
 #portal{
   position: inherit; left: 47.5%; bottom: 30%;
+  font-size: 1.2vw;
 }
 #portalcube{
   position: inherit; left: 40%; bottom: 7%;
@@ -202,6 +208,7 @@ position: absolute; bottom: 3%; right: 18%;
 
 #pile{
   position: inherit; left: 76.5%; bottom: 30%;
+  font-size: 1.2vw;
 }
 
 #pilecube{
@@ -277,7 +284,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #cantheyclimb{
-  font-size: 1.5em; 
+  font-size: 1.2vw; 
   position:inherit;; left: 15%; top: 6%;
 }
 
@@ -294,7 +301,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #climbee{
-  font-size:1.5em;
+  font-size: 1.2vw;
   position:inherit;; right: 2%; top: 6%;
 }
 
@@ -307,7 +314,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #successinclimbing{
-  font-size: 1.5em;
+  font-size: 1.2vw;
   position:inherit;; right: 5%; top: 40%;
 }
 
@@ -320,7 +327,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #ramp{
-  font-size: 1.5em;
+  font-size: 1.2vw;
   position:inherit;; left: 21.75%; top: 40%;
 }
 
@@ -337,7 +344,7 @@ position: absolute; bottom: 3%; right: 18%;
 }
 
 #lift{
-  font-size: 1.5em;
+  font-size: 1.2vw;
   position:inherit;; left: 8%; bottom: 2%;
 }
 
@@ -352,7 +359,7 @@ position: absolute; bottom: 3%; right: 18%;
 #mechanum {
   width: 20%;
   height: 24%;
-  font-size: 1.3em;
+  font-size: 1.1vw;
   position: inherit; left: 4%; top: 30%;
   border: 0px;
 }
@@ -424,14 +431,14 @@ height: 11%;
 #groundball {
   width: 20%;
   height: 24%;
-  font-size: 1.3em;
+  font-size: 1.1vw;
   position: inherit; left: 28%; top: 30%;
   border: 0px;
 }
 #hopper{
   width: 20%;
   height: 24%;
-  font-size: 1.3em;
+  font-size: 1.1vw;
   position: inherit; left: 52%; top: 30%;
   border: 0px;
 }
@@ -439,7 +446,7 @@ height: 11%;
 #macrogear{
   width: 20%;
   height: 24%;
-  font-size: 1.3em;
+  font-size: 1.1vw;
   position: inherit; left: 76%; top: 30%;
   border: 0px;
 }
@@ -447,26 +454,31 @@ height: 11%;
 .cantheyclimb{
   width: 15%;
   height: 10%;
+  font-size: .85vw;
 }
 
 .numberofrob{
   width: 20%;
   height: 10%; 
+  font-size: .85vw;
 }
 
 .fault{
   width: 17%;
   height: 10%;
+  font-size: .85vw;
 }
 
 .ramp{
   width: 15%;
   height: 10%;
+  font-size: .85vw;
 }
 
 .lift{
   width: 20%;
   height: 10%;
+  font-size: .85vw;
 }
 
 .elias{

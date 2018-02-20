@@ -1,7 +1,16 @@
 function toggle(event) {
   document.getElementById(event.target.attributes['id'].value.slice(1)).innerHTML = Number(document.getElementById(event.target.attributes['id'].value.slice(1)).innerHTML) + 1;
 };
+
 document.querySelectorAll('.toggle').forEach(cell=>cell.addEventListener('click', toggle))
+
+function toggledown(event) {
+  document.getElementById(event.target.attributes['id'].value.slice(1)).innerHTML = Number(document.getElementById(event.target.attributes['id'].value.slice(1)).innerHTML) - 1;
+};
+
+document.querySelectorAll('.toggledown').forEach(cell=>cell.addEventListener('click', toggledown))
+
+
 
 document.getElementById("aleft").addEventListener('click', (event)=>{
   if (event.target.style.background == 'cyan') {
@@ -135,3 +144,5 @@ document.getElementById("autoline").addEventListener('click', (event)=>{
 function eliasisdumb(){
   setTimeout(function(){alert("elias is super, very, very stinky"); }, 0);
 }
+
+if (screen.width>=2048) {document.write("<style>body{zoom:115%;}.hand_ipad img {top:114px}</style>";}

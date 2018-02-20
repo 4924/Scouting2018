@@ -113,15 +113,15 @@ position: absolute; bottom: 3%; right: 18%;
 #switch{
   position: inherit; left: 19.5%; top: 10%;
 }
-#high-ball-score{
+#switchscore{
   position: inherit; left: 12%; top: 23%;
 }
-#pswitch {
+#pswitchscore {
   position: inherit; left: 25%; top: 30%;
   width: 6%;
   height: 11%;
 }
-#mswitch {
+#mswitchscore {
   position: inherit; left: 13%; top: 30%;
   width: 6%;
   height: 11%;
@@ -131,16 +131,16 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit; left: 48%; top: 10%;
 }
 
-#mid-ball-score{
+#scalescore{
   position: inherit; left: 40%; top: 23%; 
 }
 
-#pscale {
+#pscalescore {
   position: inherit; left: 53%; top: 30%;
   width: 6%;
   height: 11%;
 }
-#mscale {
+#mscalescore {
   position: inherit; left: 41%; top: 30%;
   width: 6%;
   height: 11%;
@@ -150,17 +150,17 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit; left: 76%; top: 10%;
 }
 
-#low-ball-score{
+#vaultscore{
   position: inherit; left: 68%; top: 23%;
 }
 
-#pvault {
+#pvaultscore {
   position: inherit; left: 81%; top: 30%;
   width: 6%;
   height: 11%;
 }
 
-#mvault {
+#mvaultscore {
   position: inherit; left: 69%; top: 30%;
   width: 6%;
   height: 11%;
@@ -172,12 +172,12 @@ position: absolute; bottom: 3%; right: 18%;
 #groundcube{
   position: inherit; left: 12%; bottom: 7%;
 }
-#pground{
+#pgroundcube{
   position: inherit; left: 25%; bottom: 16%;
   width: 6%;
   height: 11%;
 }
-#mground{
+#mgroundcube{
   position: inherit; left: 13%; bottom: 16%;
   width: 6%;
   height: 11%;
@@ -189,12 +189,12 @@ position: absolute; bottom: 3%; right: 18%;
 #portalcube{
   position: inherit; left: 40%; bottom: 7%;
 }
-#pportal{
+#pportalcube{
   position: inherit; left: 53%; bottom: 16%;
   width: 6%;
   height: 11%;
 }
-#mportal{
+#mportalcube{
   position: inherit; left: 41%; bottom: 16%;
   width: 6%;
   height: 11%;
@@ -207,12 +207,12 @@ position: absolute; bottom: 3%; right: 18%;
 #pilecube{
   position: inherit; left: 68%; bottom: 7%;
 }
-#ppile{
+#ppilecube{
   position: inherit; left: 81%; bottom: 16%;
   width: 6%;
   height: 11%;
 }
-#mpile{
+#mpilecube{
   position: inherit; left: 69%; bottom: 16%;
   width: 6%;
   height: 11%;
@@ -225,7 +225,7 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit;; left: 10%; top: 15%;
   border: 0px;
 }
-#auto-switch-score {
+#aswitch {
   position: inherit;; left: 12.5%; top: 35%;
 }
 #paswitch{
@@ -245,7 +245,7 @@ position: absolute; bottom: 3%; right: 18%;
   position: inherit;; right: 10%; top: 15%;
   border: 0px;
 }
-#auto-scale-score {
+#ascale {
   position: inherit;; right: 12.5%; top: 35%;
 }
 #pascale {

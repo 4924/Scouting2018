@@ -43,20 +43,12 @@ border: 2px solid black;
  } 
 
 #submit {
-  width: 13%;
-  height: 9.8%;
+  width: 15%;
+  height: 10%;
   border: 2px solid black;
-  font-size: 2em;
-  transform: rotate(90deg);
-  transform-origin: left top 0;
-  -webkit-text-stroke: 2.0px #000000;
-  position: absolute; right: -11%; bottom: 18.45%;
-  color: white;
-  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
-  10px 20px 5px rgba(0,0,0,0.05),
- -10px 20px 5px rgba(0,0,0,0.05);
-  background-color: white;
-  font-weight: 900;
+  font-size: 1.5vw;
+  position: absolute; right: 2%; bottom: 5%;
+  color: black;
 }
 
 
@@ -454,31 +446,31 @@ height: 11%;
 .cantheyclimb{
   width: 15%;
   height: 10%;
-  font-size: .85vw;
+  font-size: .69vw;
 }
 
 .numberofrob{
   width: 20%;
   height: 10%; 
-  font-size: .85vw;
+  font-size: .69vw;
 }
 
 .fault{
   width: 17%;
   height: 10%;
-  font-size: .85vw;
+  font-size: .69vw;
 }
 
 .ramp{
   width: 15%;
   height: 10%;
-  font-size: .85vw;
+  font-size: .69vw;
 }
 
 .lift{
   width: 20%;
   height: 10%;
-  font-size: .85vw;
+  font-size: .69vw;
 }
 
 .elias{
@@ -497,7 +489,7 @@ height: 11%;
 .aposition{
   width: 20%;
   height: 20%;
-  font-size: 1em;
+  font-size: .69em;
 }
 
 .score{
@@ -505,6 +497,7 @@ height: 11%;
   height: 20%;
   border: 0px solid black;
   padding-top: 10px;
+  font-size: 2vw;
 }
 .selected{
   border: 2px solid black;

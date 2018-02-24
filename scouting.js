@@ -145,4 +145,4 @@ function eliasisdumb(){
   setTimeout(function(){alert("elias is super, very, very stinky"); }, 0);
 }
 
-if (screen.width>=2048) {document.write("<style>body{zoom:115%;}.hand_ipad img {top:114px}</style>";}
+

@@ -1,3 +1,28 @@
+#auto{
+  position: absolute; left: 2%; top: -4%;
+  font-size: 2.5vh;
+}
+
+#autoopr{
+  position: absolute; left: 30%; top: 2%; 
+}
+
+#autoinfo{
+  position: absolute; left: 2%; top: 20%;
+}
+
+#autoinfotwo{
+  position: absolute; left: 2%; top: 35%;
+}
+
+#autoinfothree{
+  position: absolute; left: 2%; top: 50%;
+}
+
+.auto{
+  font-size: 2vh;
+}
+
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -27,6 +52,7 @@
   	grid-column: 3 / 4;
   	grid-row: 2;
   	border: 2px solid black;
+    position: relative;
 }
 .item-5 {
   	grid-column: 1 / 4;

@@ -9,16 +9,13 @@
 
 <section class="grid-1">
   <div class="item-1"> 
-  	<h1 id="matches">Matches</h1>
+  	<h1 id="matches">Matches played : 3</h1>
 
-	<h2 id="match1">Match 1</h2>
-	<p id="match1info">Won, Scouted</p>
+	<p id="match1" class="matches">Match 1: Won</p>
 
-	<h2 id="match2">Match 2</h2>
-	<p id="match2info">Lost, Scouted</p>
+	<p id="match2" class="matches">Match 2: Lost</p>
 
-	<h2 id="match3">Match 3</h2>
-	<p id="match3info">Won, Scouted</p>
+	<p id="match3" class="matches">Match 3: Won</p>
   </div>
 
   <div class="item-2">
@@ -41,15 +38,15 @@
 	<h2 id="climbwhat">What do they climb off of?</h2>
 	<p id="climbedoff">Climbed off of mid bar</p>
 
-	<h2 id="ynoclimboff">Why couldn;t someone climb off of them?</h2>
+	<h2 id="ynoclimboff">Why couldn' t someone climb off of them?</h2>
 	<p id="thiswhy">Their own fault</p>
 
 	<h2 id="dohaveramp">Do they have a ramp?</h2>
 	<p id="haveramp">No</p>
   </div>
   
-    <div class="item-4">
-  <h1 id="auto">Auto</h1>
+  <div class="item-4">
+    <h1 id="auto">Auto</h1>
     <h2 id="autoopr" class="auto">OPR: 130, 80%</h2>
     <p id="autoinfo" class="auto">Left, Cube in Switch, Line Crossed </p>
     <p id="autoinfotwo" class="auto">Middle, Cube in Scale, Line Crossed </p>
@@ -57,6 +54,9 @@
   </div>
 
   <div class="item-5">6</div>
+    <h1 id="cubes">Cubes</h1>
+    <canvas id="myChart" width="40" height="40"></canvas>
+  
 
   <div class="item-6">7</div>
   
@@ -65,7 +65,8 @@
   <div class="item-8">9</div>
 
 </section>
-	 
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
 <script src="scouting.js"></script>
 </body>
 </html>

@@ -9,16 +9,13 @@
 
 <section class="grid-1">
   <div class="item-1"> 
-  	<h1 id="matches">Matches</h1>
+  	<h1 id="matches">Matches played : 3</h1>
 
-	<h2 id="match1">Match 1</h2>
-	<p id="match1info">Won, Scouted</p>
+	<p id="match1" class="matches">Match 1: Won</p>
 
-	<h2 id="match2">Match 2</h2>
-	<p id="match2info">Lost, Scouted</p>
+	<p id="match2" class="matches">Match 2: Lost</p>
 
-	<h2 id="match3">Match 3</h2>
-	<p id="match3info">Won, Scouted</p>
+	<p id="match3" class="matches">Match 3: Won</p>
   </div>
 
   <div class="item-2">
@@ -34,22 +31,22 @@
   </div>
 
   <div class="item-3">
-  	<h1 id="climbing" align="center">Climbing</h1>
+  	<h1 id="climbing">Climbing</h1>
   	<h2 id="canclimb">Can they climb?</h2>
 	<p id="thisclimb">They can climb</p>
 
 	<h2 id="climbwhat">What do they climb off of?</h2>
 	<p id="climbedoff">Climbed off of mid bar</p>
 
-	<h2 id="ynoclimboff">Why couldn't someone climb off of them?</h2>
+	<h2 id="ynoclimboff">Why couldn' t someone climb off of them?</h2>
 	<p id="thiswhy">Their own fault</p>
 
 	<h2 id="dohaveramp">Do they have a ramp?</h2>
 	<p id="haveramp">No</p>
   </div>
   
-    <div class="item-4">
-  <h1 id="auto">Auto</h1>
+  <div class="item-4">
+    <h1 id="auto">Auto</h1>
     <h2 id="autoopr" class="auto">OPR: 130, 80%</h2>
     <p id="autoinfo" class="auto">Left, Cube in Switch, Line Crossed </p>
     <p id="autoinfotwo" class="auto">Middle, Cube in Scale, Line Crossed </p>
@@ -57,42 +54,23 @@
   </div>
 
   <div class="item-5">
+    <h1 id="cubes">Cubes</h1>
+    <canvas id="myChart" style="width: 30px; height: 30px;"></canvas>
+    <canvas id="myChart2" width="40" height="40"></canvas>
+  </div>
   
+
   <div class="item-6">
     x
   </div>
-
-
-  </div>
-
-  <div class="item-6"></div>
- 
-  <div class="item-7">
-  	<h1 id="switch">Switch: </h1>
-  	<h1 id="scale">Scale: </h1>
-  	<h1 id="groundPickUp">Ground pick up: </h1>
-  	<h1 id="portalPickUp">Portal pick up: </h1>
-  	<h1 id="intakeSpeed">Intake speed: </h1>
-
-  </div>
   
-  <div class="item-8">
-  	<h1 id="comments">Comments</h1>
-  	<div id="match1Comments">
-  		<input id="match-1Info" placeholder="Match 1"></input>
-  	</div>
-
-  	<div id="match2Comments">
-  		<input id="match-2Info" placeholder="Match 2"></input>
-  	</div>
-
-    <div id="match3Comments">
-  		<input id="match-3Info" placeholder="Match 3"></input>
-  	</div>
-  </div>
+  <div class="item-7">8</div>
+  
+  <div class="item-8">9</div>
 
 </section>
-	 
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
 <script src="scouting.js"></script>
 </body>
 </html>

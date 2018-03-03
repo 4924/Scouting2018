@@ -2,19 +2,21 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["Match 1", "Match 2"],
+        labels: ["Match 1", "Match 2", "Match 3"],
         datasets: [{
             label: 'Ground',
-            data: [5, 2],
+            data: [5,2,3],
             backgroundColor: [
+                'rgba(55, 200, 100, 0.5)',
                 'rgba(55, 200, 100, 0.5)',
                 'rgba(55, 200, 100, 0.5)'
             ]
         }, 
         {
             label: 'Portal',
-            data: [1, 6],
+            data: [1,6,3],
             backgroundColor: [
+                'rgba(54, 162, 235, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
                 'rgba(54, 162, 235, 0.5)'
             ]
@@ -36,27 +38,31 @@ var ctx = document.getElementById("myChart2").getContext('2d');
 var myChart2 = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ["Match 1", "Match 2"],
+        labels: ["Match 1", "Match 2", "Match 3"],
         datasets: [{
             label: 'Scale',
-            data: [3,5],
+            data: [3,5,4],
             backgroundColor: [
                 'rgba(200, 100, 100, 0.5)',
-                'rgba(200, 100, 100, 0.5)'                 
+                'rgba(200, 100, 100, 0.5)',
+                'rgba(200, 100, 100, 0.5)'               
+
             ]
         },
         {
             label: 'Switch',
-            data: [2, 2],
+            data: [2,2,1],
             backgroundColor: [
+                'rgba(55, 200, 100, 0.5)',
                 'rgba(55, 200, 100, 0.5)',
                 'rgba(55, 200, 100, 0.5)'
             ]
         }, 
         {
             label: 'Dropped',
-            data: [1, 1],
+            data: [1,1,1],
             backgroundColor: [
+                'rgba(54, 162, 235, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
                 'rgba(54, 162, 235, 0.5)'
             ]

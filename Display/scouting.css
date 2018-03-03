@@ -85,10 +85,10 @@
   position: absolute; left: 2%; top: 80%;
 }
 
-<<<<<<< HEAD
 #cubes{
   position: absolute;	
-=======
+ }
+ 
 #intake{
   position: absolute; left: 35%; top: 2%;
   font-size: 1.5vw;
@@ -96,7 +96,6 @@
 
 #switchyn{
   position: absolute; left: 30%; top: 15%;
->>>>>>> 5221404b19c5d21a09882b8812c2650fdc277d13
 }
 
 #scaleyn{
@@ -197,7 +196,6 @@
     position: relative;
 }
 
-<<<<<<< HEAD
 .item-9 {
 	grid-column: 1 / 2;
 	grid-row: 4;
@@ -212,8 +210,6 @@
 	position: relative;
 }
 
-=======
->>>>>>> 5221404b19c5d21a09882b8812c2650fdc277d13
 #match1Comments {
     width: 20.5%;
     position: absolute;

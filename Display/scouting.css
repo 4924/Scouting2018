@@ -63,11 +63,9 @@
   position: absolute; left: 2%; top: 80%;
 }
 
-#mychart{
-  width: 40%; 
-  
+#cubes{
+  position: absolute;
 }
-
 .matches{
   font-weight: 600;
   font-size: 2vh;
@@ -112,4 +110,10 @@
     position: relative;
 }
 
-.item-5
+.item-5{
+    grid-column: 4 / 8;
+    grid-row: 1;
+    border: 2px solid black;
+    position: relative;
+}
+}

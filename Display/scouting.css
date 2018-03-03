@@ -111,9 +111,12 @@
 }
 
 .item-5{
-    grid-column: 4 / 8;
+    grid-column: 4 / 6;
     grid-row: 1;
     border: 2px solid black;
     position: relative;
 }
+
+.item-6{
+  
 }

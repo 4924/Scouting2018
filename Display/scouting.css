@@ -133,11 +133,24 @@
 
 .item-8 {
     grid-column: 1 / 4;
-    grid-row: 4;
+    grid-row: 5;
     border: 2px solid black;
     position: relative;
 }
 
+.item-9 {
+	grid-column: 1 / 2;
+	grid-row: 4;
+	border: 2px solid black;
+	position: relative;
+}
+
+.item-10 {
+	grid-column: 2 / 3;
+	grid-row: 4;
+	border: 2px solid black;
+	position: relative;
+}
 
 #match1Comments {
     width: 20.5%;
@@ -156,3 +169,18 @@
     position: inherit;
 }
 
+#scale_epr {
+  position: inherit;
+}
+
+#switch_epr {
+  position: inherit;
+}
+
+#opp_epr {
+  position: inherit;
+}
+
+#portal_opr {
+  position: inherit;
+}

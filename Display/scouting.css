@@ -4,19 +4,19 @@
 }
 
 #autoopr{
-  position: absolute; left: 2%; top: 10%; 
+  position: absolute; left: 2%; top: 20%; 
 }
 
 #autoinfo{
-  position: absolute; left: 2%; top: 20%;
-}
-
-#autoinfotwo{
   position: absolute; left: 2%; top: 35%;
 }
 
+#autoinfotwo{
+  position: absolute; left: 2%; top: 47%;
+}
+
 #autoinfothree{
-  position: absolute; left: 2%; top: 50%;
+  position: absolute; left: 2%; top: 59%;
 }
 
 #matches{

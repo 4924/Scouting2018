@@ -42,21 +42,55 @@
   font-size: 1.5vw;
 }
 
-#canclimb
+#climbingtable{
+  border: 1px solid black;
+}
 
-#thisclimb
+#canclimb{
+  position: relative;
+}
 
-#climbwhat
+#canclimb_y{
+  position: relative;
+}
 
-#climbedoff
+#canclimb_n{
+  position: relative;
+}
+
+#climbside{
+  position: relative;
+}
+
+#climbside_y{
+  position: relative;
+}
+
+#climbside_n{
+  position: relative;
+}
+
+#climbside{
+  background: #c9c9c9;
+}
+
+#climbside_y{
+  background: #c9c9c9;
+}
+
+#climbside_n{
+  background: #c9c9c9;
+}
 
 #ynoclimboff
 
 #thiswhy
 
-#dohaveramp
+#ramp
 
-#haveramp
+#ramp_y
+
+#ramp_n
 
 #drive{
   position: absolute; left: 40%;

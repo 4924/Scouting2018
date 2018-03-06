@@ -1,6 +1,3 @@
-body{
-  font-family: "Comic Sans MS";
-}
 
 #auto{
   position: absolute; left: 45%; top: 2%;
@@ -118,6 +115,18 @@ body{
   position: absolute; left: 30%; top: 75%;
 }
 
+#pu1{
+  position: absolute; left: 23%; top: 15%;
+}
+
+#pu2{
+  position: absolute; left: 23%; top: 30%;
+}
+
+#pu3{
+  position: absolute; left: 23%; top: 45%;
+}
+
 .intakethings{
   font-size: 1.25vw;
 }
@@ -128,6 +137,10 @@ body{
 
 .auto{
   font-size: 1.25vw;
+}
+
+.pu{
+  font-size: 1.5vw;
 }
 
 .grid-1 {
